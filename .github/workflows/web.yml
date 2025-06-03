@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy App
+name: Todos App
 
 on:
   # Runs on pushes targeting the default branch
@@ -34,15 +34,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install dependencies
-        run: yarn install
+        run: npm install
       - name: Тестирование
-        run: yarn lint
+        run: npm run lint
+        run: npm test
       # - name: Install dependencies using npm ci
       #   run: yarn ci
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
