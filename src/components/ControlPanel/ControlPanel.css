@@ -1,0 +1,53 @@
+.todos__control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.todos__tasks-left {
+  font-size: 14px;
+  color: #888888;
+}
+
+.todos__filter-tastks {
+  display: flex;
+  gap: 28px;
+  position: relative;
+}
+
+.todos__filter-option-btn {
+  padding: 4px 6px;
+  border: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #888888;
+  background-color: transparent;
+  transition: box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #424242;
+  }
+
+  &.todos__filter-option-btn--active {
+    border-radius: 3px;
+    box-shadow: 0 0 2px 1px #eedcdc;
+  }
+}
+
+.todos__clear-tasks-completed-btn {
+  padding: 0;
+  border: none;
+  font-size: 14px;
+  color: #888888;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #424242;
+  }
+}

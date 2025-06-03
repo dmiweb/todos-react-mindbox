@@ -1,0 +1,30 @@
+.todos__form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 68px;
+  margin-bottom: 3px;
+  padding: 0 18px;
+  background-color: #fefefe;
+
+  &::before {
+    content: '\2039';
+    font-size: 50px;
+    color: #e6e6e6;
+    transform: rotate(-90deg);
+  }
+}
+
+.todos__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  font-size: 22px;
+  outline: none;
+
+
+  &::placeholder {
+    font-style: italic;
+    color: #e6e6e6;
+  }
+}
