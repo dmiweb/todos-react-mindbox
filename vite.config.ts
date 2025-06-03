@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/todos-mindbox',
+  base: '/todos-react-mindbox',
   test: {
     globals: true,
     environment: 'jsdom',
